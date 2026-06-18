@@ -139,6 +139,12 @@ echo "Install Flatpak / topgrade..."
 sudo xbps-install -y flatpak topgrade
 sleep 1
 
+#screenshot feature
+clear
+echo "Install Gnome screenshot"
+sudo xbps-install -S gnome-screenshot
+sleep 1
+
 #Fonts
 clear
 echo "Install Fonts..."
@@ -148,7 +154,7 @@ sleep 1
 #Software
 clear
 echo "Install Software..."
-sudo xbps-install -y firefox gnome-terminal firefox-i18n-de
+sudo xbps-install -y firefox gnome-terminal gedit
 sleep 1
 # Erstelle ein Skript, das die gsettings nach der Anmeldung ausführt
 echo "Creating autostart script for cinnamon theme settings..."
@@ -259,7 +265,7 @@ sudo ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/
 sleep 1
 clear
 #Deutsche Tastatur aktivieren X11 / Activate german keyboard for X11
-echo "de_DE" > "$HOME/.config/user-dirs.locale"
+echo "en_US" > "$HOME/.config/user-dirs.locale"
 
 #Setup automount ssd/hdd - ohne fstab / setup automount for ssds/hdds - without fstab
 sudo cp ~/void/10-mount-drives.rules /etc/polkit-1/rules.d/
