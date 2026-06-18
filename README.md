@@ -16,7 +16,7 @@ This script simplifies the installation of Void Linux with the Cinnamon desktop 
    ```
 3. **Clone the repository** (as a normal user):
    ```bash
-   git clone https://github.com/TechGameGeek/void.git
+   git clone -b main --depth=1 https://github.com/xxblebleblexx/void-cinnamon-installer.git
    ```
    > *Note:* The repository will be cloned to `~/void`.
 4. **Navigate to the directory**:
