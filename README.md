@@ -21,7 +21,7 @@ This script simplifies the installation of Void Linux with the Cinnamon desktop 
    > *Note:* The repository will be cloned to `~/void`.
 4. **Navigate to the directory**:
    ```bash
-   cd void
+   cd void-cinnamon-installer
    ```
 5. **Make the script executable**:
    ```bash
