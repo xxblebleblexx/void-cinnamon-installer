@@ -62,6 +62,14 @@ sudo xbps-install -y dbus
 sudo ln -s /etc/sv/dbus /var/service/
 sleep 1
 
+#cronie
+clear
+echo "Install cronie..."
+sudo xbps-install -y cronie
+sudo ln -s /etc/sv/cronie /var/service/
+sudo ln -s /etc/sv/sshd /var/service/
+sleep 1
+
 #elogind
 clear
 echo "Install elogind..."
