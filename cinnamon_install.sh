@@ -45,7 +45,7 @@ sudo xbps-install -Syu
 #Editor installieren / Install editor
 clear
 echo "Install nano..."
-sudo xbps-install -y nano
+sudo xbps-install -y nano rsv
 sleep 1
 
 #Netzwerk/Network
@@ -67,7 +67,9 @@ clear
 echo "Install cronie..."
 sudo xbps-install -y cronie
 sudo ln -s /etc/sv/cronie /var/service/
+sudo sv up cronie
 sudo ln -s /etc/sv/sshd /var/service/
+sudo sv up sshd
 sleep 1
 
 #elogind
