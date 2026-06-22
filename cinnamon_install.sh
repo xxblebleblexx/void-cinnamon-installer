@@ -124,7 +124,7 @@ sudo xbps-install -y libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit me
 clear
 echo "Install XORG/Cinnamon-all..."
 sudo xbps-install -y xorg
-sudo xbps-install -y octoxbps cinnamon-all xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs xdg-user-dirs-gtk xdg-utils
+sudo xbps-install -y octoxbps cinnamon-all xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs xdg-user-dirs-gtk xdg-utils adwaita-plus
 sleep 1
 
 #Druckerunterstuetzung / Printersupport
