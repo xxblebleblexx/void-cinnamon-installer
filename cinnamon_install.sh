@@ -218,7 +218,7 @@ EOL
 cat > ~/.config/autostart/x11kb-german.desktop <<EOL
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/setxkbmap de
+Exec=/usr/bin/setxkbmap us
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
