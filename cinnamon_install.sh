@@ -65,7 +65,7 @@ sleep 1
 #cronie
 clear
 echo "Install cronie..."
-sudo xbps-install -y cronie
+sudo xbps-install -y cronie wget
 sudo ln -s /etc/sv/cronie /var/service/
 sudo sv up cronie
 sudo ln -s /etc/sv/sshd /var/service/
