@@ -65,7 +65,7 @@ sleep 1
 #cronie
 clear
 echo "Install cronie..."
-sudo xbps-install -y cronie wget
+sudo xbps-install -y cronie
 sudo ln -s /etc/sv/cronie /var/service/
 sudo sv up cronie
 sudo ln -s /etc/sv/sshd /var/service/
@@ -164,7 +164,7 @@ sleep 1
 #Software
 clear
 echo "Install Software..."
-sudo xbps-install -y firefox gnome-terminal gedit telegram-desktop engrampa zstd unzip
+sudo xbps-install -S firefox gnome-terminal gedit telegram-desktop engrampa zstd unzip wget rsv cronie blueman bluez bluez-alsa libspa-bluetooth
 sleep 1
 # Erstelle ein Skript, das die gsettings nach der Anmeldung ausführt
 echo "Creating autostart script for cinnamon theme settings..."
